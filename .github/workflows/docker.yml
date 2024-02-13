@@ -20,7 +20,8 @@ jobs:
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
-        with: shirowxxx/mirakurun
+        with:
+          images: shirowxxx/mirakurun
 
       - name: Log in to DockerHub
         if: github.event_name != 'pull_request'
