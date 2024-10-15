@@ -1,5 +1,5 @@
 ARG ARCH=
-FROM ${ARCH}node:18.20.4-bookworm AS builid
+FROM ${ARCH}node:18.20.4-bookworm AS build
 WORKDIR /app
 ENV DOCKER=YES NODE_ENV=production
 ADD . .
